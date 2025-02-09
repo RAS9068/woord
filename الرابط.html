@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تحويل PDF إلى Word</title>
+    <link rel="stylesheet" href="التصميم.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تحويل PDF إلى Word</h1>
+        <form action="/convert" method="post" enctype="multipart/form-data">
+            <label for="pdf_file">اختر ملف PDF:</label>
+            <input type="file" id="pdf_file" name="pdf_file" accept="application/pdf" required>
+            <button type="submit">تحويل الملف</button>
+        </form>
+    </div>
+</body>
+<!-- لتشغيل الصفحة على الانترنت محلياً، يمكنك استخدام الأمر التالي في الطرفية:
+    python -m http.server 8000
+ثم افتح المتصفح وانتقل إلى:
+    http://localhost:8000/الرابط.html
+-->
